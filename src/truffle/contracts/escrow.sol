@@ -1,9 +1,9 @@
 pragma solidity ^0.6.1;
 
 contract EscrowContract {
-  address public depositor;
-  address public beneficiary;
   address public arbiter;
+  address public beneficiary;
+  address public depositor;
 
   constructor(address _arbiter, address _beneficiary) public payable {
     arbiter = _arbiter;
@@ -16,9 +16,9 @@ contract EscrowContract {
       msg.sender == arbiter,
       "Only the arbiter can approve the transaction"
     );
-    emit Approve(address(this).balance);
+    emit Approved(address(this).balance);
     payable(beneficiary).transfer(address(this).balance);
   }
 
-  event Approve(uint balance);
+  event Approved(uint _balance );
 }
