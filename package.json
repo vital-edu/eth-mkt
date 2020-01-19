@@ -7,10 +7,12 @@
     "test": "test"
   },
   "dependencies": {
+    "solc": "^0.6.1"
+  },
+  "devDependencies": {
     "prettier": "^1.19.1",
     "prettier-plugin-solidity": "^1.0.0-alpha.36"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
