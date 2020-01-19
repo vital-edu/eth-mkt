@@ -1,0 +1,19 @@
+{
+  "name": "free_the_market",
+  "version": "0.1.0",
+  "description": "Decentralized ecommerce",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "prettier": "^1.19.1",
+    "prettier-plugin-solidity": "^1.0.0-alpha.36"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Eduardo Vital Alencar Cunha <vitaldu@gmail.com>",
+  "license": "MIT"
+}
